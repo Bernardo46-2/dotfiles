@@ -1,0 +1,20 @@
+{
+    "languageserver": {
+        "haskell": {
+            "command": "haskell-language-server-wrapper",
+            "args": ["--lsp"],
+            "rootPatterns": ["*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml"],
+            "filetypes": ["haskell", "lhaskell"]
+        }
+    },
+    "diagnostic.virtualText": true,
+    "rust-analyzer.enable": true,
+    "rust-analyzer.server.path": "/home/bernardo/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rust-analyzer",
+    "rust-analyzer.diagnostics.enable": true,
+    "workspace.ignoredFolders": [
+        "$HOME",
+        "$HOME/.cargo/**",
+        "$HOME/.rustup/**"
+    ],
+    "python.analysis.typeCheckingMode": "off"
+}
