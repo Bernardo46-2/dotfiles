@@ -3,6 +3,10 @@ Plug 'jdhao/better-escape.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Yazeed1s/minimal.nvim'
 Plug 'mechatroner/rainbow_csv'
+Plug 'AlanWarren/rocket'
+Plug 'nyoom-engineering/oxocarbon.nvim'
+Plug 'Shadorain/shadotheme'
+Plug 'water-sucks/darkrose.nvim'
 call plug#end()
 
 " Quick settings
@@ -59,9 +63,6 @@ set expandtab
 
 " Not wrap lines
 set nowrap
-
-" Semicolon
-nnoremap ; A;<ESC>
 
 " Allow cgn for word under cursor
 nnoremap <silent> c<Tab> :let @/=expand('<cword>')<cr>cgn
