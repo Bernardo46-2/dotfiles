@@ -11,10 +11,18 @@
     "rust-analyzer.enable": true,
     "rust-analyzer.server.path": "/home/bernardo/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rust-analyzer",
     "rust-analyzer.diagnostics.enable": true,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "rust-analyzer.inlayHints.parameterHints.enable": false,
+    "rust-analyzer.inlayHints.chainingHints.enable": false,
+    "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "never",
+    "rust-analyzer.inlayHints.closingBraceHints.enable": false,
     "workspace.ignoredFolders": [
         "$HOME",
         "$HOME/.cargo/**",
         "$HOME/.rustup/**"
     ],
-    "python.analysis.typeCheckingMode": "off"
+    "python.analysis.typeCheckingMode": "off",
+    "pyright.inlayHints.variableTypes": false,
+    "pyright.inlayHints.parameterTypes": false,
+    "pyright.inlayHints.functionReturnTypes": false
 }

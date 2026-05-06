@@ -7,6 +7,7 @@ Plug 'AlanWarren/rocket'
 Plug 'nyoom-engineering/oxocarbon.nvim'
 Plug 'Shadorain/shadotheme'
 Plug 'water-sucks/darkrose.nvim'
+Plug 'sphamba/smear-cursor.nvim'
 call plug#end()
 
 " Quick settings
@@ -72,6 +73,9 @@ if &term =~ '256color'
     set t_ut=
 endif
 
+" Reverse text by pressing mr in visual mode
+vnoremap mr c<C-O>:set ri<CR><C-R>"<Esc>:set nori<CR>
+
 " Coc stuff
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
@@ -81,3 +85,10 @@ let g:coc_global_extensions = ['coc-clangd', 'coc-rust-analyzer']
 
 " Rainbow CSV stuff
 let g:disable_rainbow_hover = 1
+
+" Fancy cursor thing
+lua require('smear_cursor').enabled = true
+lua require('smear_cursor').setup({
+    \cursor_color = '#d3cdc3',
+    \scroll_buffer_space = false,
+\})
